@@ -1,0 +1,39 @@
+###
+
+GET http://localhost:3000/api/productos
+
+###
+POST http://localhost:3000/api/productos
+Content-Type: application/json
+
+{
+    "nombre": "Cereales",
+    "precio": 4
+}
+
+###
+
+GET http://localhost:3000/api/productos/4
+
+###
+
+POST http://localhost:3000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "nombre": "Zumos", 
+    "precio": 2.3 
+}
+
+###
+
+PUT http://localhost:3000/api/productos/4 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "nombre": "Pasta", 
+    "precio": 2 
+}
+
+###
+DELETE http://localhost:3000/api/productos/4
